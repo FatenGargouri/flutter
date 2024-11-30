@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'pages/authentification.page.dart';
-import 'pages/contact.page.dart';
+import 'pages/apropos.page.dart';
 import 'pages/gallerie.page.dart';
 import 'pages/metio.page.dart';
 
@@ -9,6 +9,7 @@ import 'pages/pays.page.dart';
 
 import 'pages/home.page.dart';
 import 'pages/inscription.page.dart';
+import 'pages/Excursion.dart';
 
 void main() {
   runApp( MyApp());
@@ -19,13 +20,12 @@ class MyApp extends StatelessWidget {
     '/inscription': (context) =>  InscriptionPage(),
     '/authentification': (context) => AuthentificationPage(),
     '/home': (context) => const HomePage(),
-    '/contact': (context) => const contact(),
+    '/apropos': (context) => const apropos(),
     '/gallerie': (context) =>  GalleriePage(),
     '/metio': (context) => const metio(),
     '/pays': (context) =>  pays(),
+    '/excursions': (context) => ExcursionsPage()
   };
-
-
 
   @override
   Widget build(BuildContext context) {

@@ -20,20 +20,30 @@ class HomePage extends StatelessWidget {
               child: Ink.image(
                   height:180,
                   width: 180,
-                  image: const AssetImage('images/meteo.png')),
+                  image: const AssetImage('images/apropos.png')),
               onTap: (){
                 Navigator.pop(context);
-                Navigator.pushNamed(context,"/metio");
+                Navigator.pushNamed(context,"/apropos");
               },
             ),
             InkWell(
               child: Ink.image(
                   height:180,
                   width: 180,
-                  image: const AssetImage('images/contact.png')),
+                  image: const AssetImage('images/excursion.png')),
               onTap: (){
                 Navigator.pop(context);
-                Navigator.pushNamed(context,"/contact");
+                Navigator.pushNamed(context,"/excursions");
+              },
+            ),
+            InkWell(
+              child: Ink.image(
+                  height:180,
+                  width: 180,
+                  image: const AssetImage('images/meteo.png')),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.pushNamed(context,"/metio");
               },
             ),
             InkWell(
@@ -50,29 +60,21 @@ class HomePage extends StatelessWidget {
               child: Ink.image(
                   height:180,
                   width: 180,
-                  image: const AssetImage('images/parametres.png')),
-              onTap: (){
-                Navigator.pop(context);
-                Navigator.pushNamed(context,"/parametre");
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                  height:180,
-                  width: 180,
                   image: const AssetImage('images/pays.png')),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.pushNamed(context,"/pays");
               },
             ),
+            
             InkWell(
               child: Ink.image(
                   height:180,
                   width: 180,
                   image: const AssetImage('images/deconnexion.png')),
               onTap: (){
-                _onDeconnexionPressed(context);
+                Navigator.pop(context);
+                Navigator.pushNamed(context,"/authentification");
               },
             )
           ],
@@ -81,19 +83,9 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Fonction pour gérer le bouton de déconnexion
-  Future<void> _onDeconnexionPressed(BuildContext context) async {
-    // Code de déconnexion ici (par exemple, suppression des informations de connexion)
-    // Vous pouvez ici supprimer les données d'identification stockées ou effectuer d'autres actions nécessaires
-
-    // Navigation vers la page d'authentification et suppression des routes précédentes
-    Navigator.pushNamedAndRemoveUntil(
-      context,
-      '/authentification', // Route de la page d'authentification
-          (route) => false, // Supprimer toutes les routes précédentes
-    );
+  
   }
 
-}
+
 
 

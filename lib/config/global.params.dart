@@ -11,6 +11,22 @@ class GlobalParams {
       "route": "/home"
     },
     {
+      "title": "A propos",
+      "icon": const Icon(
+        Icons.contact_page,
+        color: Colors.blue,
+      ),
+      "route": "/apropos"
+    },
+    {
+      "title": "Excursions",
+      "icon": const Icon(
+        Icons.travel_explore,
+        color: Colors.blue,
+      ),
+      "route": "/excursions"
+    },
+    {
       "title": "Météo",
       "icon": const Icon(
         Icons.sunny_snowing,
@@ -35,20 +51,12 @@ class GlobalParams {
       "route": "/pays"
     },
     {
-      "title": "Contact",
-      "icon": const Icon(
-        Icons.contact_page,
-        color: Colors.blue,
-      ),
-      "route": "/contact"
-    },
-    {
       "title": "Déconnexion",
       "icon": const Icon(
         Icons.logout,
         color: Colors.blue,
       ),
       "route": "/authentification"
-    },
+    }
   ];
 }
