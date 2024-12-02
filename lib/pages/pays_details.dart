@@ -20,7 +20,6 @@ class _PaysDetailsPageState extends State<PaysDetails> {
   }
 
   void getPaysData(String ville) {
-    print("Météo de la ville de " + ville);
     String url =
         "https://restcountries.com/v2/name/${ville}";
     http.get(Uri.parse(url)).then((resp) {

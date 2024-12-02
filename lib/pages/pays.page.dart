@@ -39,7 +39,7 @@ class pays extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                _onGetMeteoDetails(context);
+                _onGetPaysDetails(context);
               },
               child: Text("chercher"),
               style: ElevatedButton.styleFrom(maximumSize: Size.fromHeight(50)),
@@ -50,7 +50,7 @@ class pays extends StatelessWidget {
     );
   }
 
-  void _onGetMeteoDetails(BuildContext context) {
+  void _onGetPaysDetails(BuildContext context) {
     String v = txt_pays.text;
     Navigator.push(
       context,

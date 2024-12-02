@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'pages/authentification.page.dart';
 import 'pages/apropos.page.dart';
 import 'pages/gallerie.page.dart';
-import 'pages/metio.page.dart';
+
 
 import 'pages/pays.page.dart';
 
@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
     '/home': (context) => const HomePage(),
     '/apropos': (context) => const apropos(),
     '/gallerie': (context) =>  GalleriePage(),
-    '/metio': (context) => const metio(),
     '/pays': (context) =>  pays(),
     '/excursions': (context) => ExcursionsPage()
   };

@@ -27,14 +27,6 @@ class GlobalParams {
       "route": "/excursions"
     },
     {
-      "title": "Météo",
-      "icon": const Icon(
-        Icons.sunny_snowing,
-        color: Colors.blue,
-      ),
-      "route": "/metio"
-    },
-    {
       "title": "Gallerie",
       "icon": const Icon(
         Icons.photo,
@@ -51,7 +43,7 @@ class GlobalParams {
       "route": "/pays"
     },
     {
-      "title": "Déconnexion",
+      "title": "Deconnexion",
       "icon": const Icon(
         Icons.logout,
         color: Colors.blue,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/menu/drawer.page.dart';
 
-// Modèle pour représenter une excursion
 class Excursion {
   final String title;
   final String description;
@@ -14,23 +13,6 @@ class Excursion {
     required this.price,
     required this.imageUrl,
   });
-}
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Voyage App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-  //excursions: ExcursionsPage(),
-    );
-  }
 }
 
 class ExcursionsPage extends StatelessWidget {
@@ -75,7 +57,7 @@ class ExcursionsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Liste des excursions"),
         backgroundColor: Colors.blue,
-        actions: [],
+        
       ),
       body: ListView.builder(
         itemCount: excursions.length,
@@ -105,7 +87,7 @@ class ExcursionsPage extends StatelessWidget {
   }
 }
 
-// Page de détails de l'excursion
+
 class ExcursionDetailsPage extends StatelessWidget {
   final Excursion excursion;
 
@@ -121,9 +103,9 @@ class ExcursionDetailsPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          
           children: <Widget>[
-            Image.network(excursion.imageUrl), // Affichage de l'image de l'excursion
+            Image.network(excursion.imageUrl), 
             SizedBox(height: 16),
             Text(
               excursion.title,

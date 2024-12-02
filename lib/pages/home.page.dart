@@ -40,16 +40,6 @@ class HomePage extends StatelessWidget {
               child: Ink.image(
                   height:180,
                   width: 180,
-                  image: const AssetImage('images/meteo.png')),
-              onTap: (){
-                Navigator.pop(context);
-                Navigator.pushNamed(context,"/metio");
-              },
-            ),
-            InkWell(
-              child: Ink.image(
-                  height:180,
-                  width: 180,
                   image: const AssetImage('images/gallerie.png')),
               onTap: (){
                 Navigator.pop(context);

@@ -41,7 +41,6 @@ class MyDrawer extends StatelessWidget {
                       Navigator.pop(context);
                       Navigator.pushNamed(context, "${item['route']}");
                     } else {
-
                       prefs.setBool("connecte", false);
                       Navigator.pushNamedAndRemoveUntil(
                         context,
