@@ -10,6 +10,7 @@ import 'pages/pays.page.dart';
 import 'pages/home.page.dart';
 import 'pages/inscription.page.dart';
 import 'pages/Excursion.dart';
+import 'pages/contact.page.dart';
 
 void main() {
   runApp( MyApp());
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
     '/apropos': (context) => const apropos(),
     '/gallerie': (context) =>  GalleriePage(),
     '/pays': (context) =>  pays(),
-    '/excursions': (context) => ExcursionsPage()
+    '/excursions': (context) => ExcursionsPage(),
+    '/contact': (context) => ContactFormPage()
   };
 
   @override

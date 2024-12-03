@@ -43,6 +43,14 @@ class GlobalParams {
       "route": "/pays"
     },
     {
+      "title": "Contact",
+      "icon": const Icon(
+        Icons.contact_page,
+        color: Colors.blue,
+      ),
+      "route": "/contact"
+    },
+    {
       "title": "Deconnexion",
       "icon": const Icon(
         Icons.logout,
